@@ -8,12 +8,16 @@
 
 :diamond_shape_with_a_dot_inside: javaForPlacements and more....
 
-# how to run java
+:red_circle: how to run java
 
-:diamond_shape_with_a_dot_inside: 1 step: java compilation :
+:diamond_shape_with_a_dot_inside: 
+
+1 step: java compilation :
 
 javac Classname.java
 
-:diamond_shape_with_a_dot_inside: 2 step: java byte code interpretation :
+:diamond_shape_with_a_dot_inside: 
+
+2 step: java byte code interpretation :
 
 java Classname (bytecode)
