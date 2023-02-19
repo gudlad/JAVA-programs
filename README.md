@@ -9,12 +9,12 @@
 
 :diamond_shape_with_a_dot_inside:  javaForPlacements and more....
   
-# text in orange how to run java
+# how to run java
 
 :diamond_shape_with_a_dot_inside:  java compilation :
 
-javac Classname.java
+$ javac Classname.java
 
 :diamond_shape_with_a_dot_inside:  java byte code interpretation :
 
-java Classname (bytecode)
+$ java Classname (bytecode)
