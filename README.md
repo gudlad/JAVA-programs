@@ -8,7 +8,9 @@
 
 :diamond_shape_with_a_dot_inside:  javaForPlacements and more....
 
-! text in orange how to run java
+<style>H1{color:Blue}</style>
+  
+#text in orange how to run java
 
 :diamond_shape_with_a_dot_inside:  java compilation :
 
