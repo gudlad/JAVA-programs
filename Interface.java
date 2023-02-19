@@ -1,12 +1,14 @@
-public class Abstraction
-{
+public class Interface {
     public static void main(String[] args) {
-
         Shape s;
-        // s = new Square();    // s acts like a square
-        s = new Rectangle(); // s acts like a rectangle
-        // s = new Circle();   // s acts like a circle
+        s = new Square();    // s acts like a square
+        methods(s);
 
+        s = new Rectangle(); // s acts like a rectangle
+        methods(s);
+
+
+        s = new Circle();   // s acts like a circle
         methods(s);
 
     }
@@ -16,18 +18,14 @@ public class Abstraction
         shape.display();
     }
 }
-abstract class Shape{ 
-    // methods in Shape class are not used by it's children
-    // we can't complete remove these methods
-    // if these methods are removed then we can't access these
-    // methods using Parent class reference
-    // methods being present in parent class is important to achieve the polymorph
-    // so make these methods as abstract
-    abstract public void draw();
-   abstract public void display();
+
+
+interface Shape{ 
+     void draw(); // by default abstract public
+    void display();
 }
 
-class Square extends Shape
+class Square implements Shape
 {
     public void draw(){
         System.out.println("Drawing a square");
@@ -37,7 +35,7 @@ class Square extends Shape
     }
 }
 
-class Rectangle extends Shape
+class Rectangle implements Shape
 {
     public void draw(){
         System.out.println("Drawing a rectangle");
@@ -47,7 +45,7 @@ class Rectangle extends Shape
     }
 }
 
-class Circle extends Shape
+class Circle implements Shape
 {
     public void draw(){
         System.out.println("Drawing a circle");
@@ -56,3 +54,5 @@ class Circle extends Shape
         System.out.println("Displaying a circle");
     }
 }
+
+

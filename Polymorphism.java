@@ -6,7 +6,7 @@ public class Polymorphism
         Shape s = new Shape();
         Square sq = new Square();
         Rectangle r = new Rectangle();
-        Cricle c = new Cricle();
+        Circle c = new Circle();
         */
 
         
@@ -14,7 +14,7 @@ public class Polymorphism
         Shape s;
         // s = new Square();    // s acts like a square
         s = new Rectangle(); // s acts like a rectangle
-        // s = new Cricle();   // s acts like a circle
+        // s = new Circle();   // s acts like a circle
 
         methods(s);
 
@@ -54,12 +54,12 @@ class Rectangle extends Shape
     }
 }
 
-class Cricle extends Shape
+class Circle extends Shape
 {
     public void draw(){
-        System.out.println("Drawing a cricle");
+        System.out.println("Drawing a Circle");
     }
     public void display(){
-        System.out.println("Displaying a cricle");
+        System.out.println("Displaying a Circle");
     }
 }
