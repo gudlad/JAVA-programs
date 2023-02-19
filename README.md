@@ -1,8 +1,3 @@
-<style>
-H1{color:Blue !important;}
-H2{color:DarkOrange !important;}
-p{color:Black !important;}
-</style>
 
 :diamond_shape_with_a_dot_inside:  javaForDsa
 
