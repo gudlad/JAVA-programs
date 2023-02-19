@@ -1,19 +1,19 @@
-javaForDsa
+:diamond_shape_with_a_dot_inside:javaForDsa
 
 :diamond_shape_with_a_dot_inside: basic java programs
 
-/# java syntax
+:diamond_shape_with_a_dot_inside: java syntax
 
-/# loop constructs
+:diamond_shape_with_a_dot_inside: loop constructs
 
-/# javaForPlacements and more....
+:diamond_shape_with_a_dot_inside: javaForPlacements and more....
 
 # how to run java
 
-/# 1 step: java compilation :
+:diamond_shape_with_a_dot_inside: 1 step: java compilation :
 
 javac Classname.java
 
-/# 2 step: java byte code interpretation :
+:diamond_shape_with_a_dot_inside: 2 step: java byte code interpretation :
 
 java Classname (bytecode)
