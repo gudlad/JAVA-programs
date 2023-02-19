@@ -1,6 +1,6 @@
 javaForDsa
 
-/# basic java programs
+:diamond_shape_with_a_dot_inside: basic java programs
 
 /# java syntax
 
@@ -15,4 +15,5 @@ javaForDsa
 javac Classname.java
 
 /# 2 step: java byte code interpretation :
+
 java Classname (bytecode)
