@@ -1,18 +1,18 @@
-//# javaForDsa
+javaForDsa
 
-//# basic java programs
+/# basic java programs
 
-//# java syntax
+/# java syntax
 
-//# loop constructs
+/# loop constructs
 
-//# javaForPlacements and more....
+/# javaForPlacements and more....
 
 # how to run java
 
-//# 1 step: java compilation :
+/# 1 step: java compilation :
 
 javac Classname.java
 
-//# 2 step: java byte code interpretation :
+/# 2 step: java byte code interpretation :
 java Classname (bytecode)
