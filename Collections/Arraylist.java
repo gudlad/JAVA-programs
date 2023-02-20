@@ -1,6 +1,17 @@
 package Collections;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+
+/*
+ * Array has 3 disadvantages:
+ * 1. it's size is fixed
+ * 2. it should contain only homogeneous elements
+ * 3. it can't utilize the scattered memory locations
+ * 
+ * ArrayList provides solutions to first two problems
+ * LinkedList provides the solution to all three
+ */
 
 public class Arraylist {
     public static void main(String[] args) {
@@ -35,7 +46,15 @@ public class Arraylist {
         mergedList.addAll(fruList);
         System.out.println(mergedList);
 
-    }
+        ArrayList num=new ArrayList(Arrays.asList(3,2,1,0));
+        // ArrayList operations
+
+       // sorting 
+       System.out.println(num);
+       Collections.sort(num);
+       System.out.println(num);
+
+    } 
 
     
 }
