@@ -16,5 +16,12 @@ public interface Interfaces {
     public default void fun4() {
         System.out.println("default fun");
     }
+
+    // we can have references of type of interface
+    // but can't instantiate interfaces
+    public static void fun3()
+    {
+        Interfaces ref;
+    }
  
 }
