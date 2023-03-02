@@ -12,14 +12,14 @@ public class Friendly_pairs{
          * here 2==2 i.e result is equal so 6,28 are friendly pairs
         */
 
-        int a=6;
+        int a=8;
         int b=28;
         System.out.println(isFriendlyPair(sum(a),a,sum(b),b));
         
     }
     public static boolean isFriendlyPair(int a,int b,int c,int d) 
     {
-        return ((int)a/b)==((int)c/d);
+        return (int)(a/b)==(int)(c/d);
     }
 
     public static int sum(int num)
