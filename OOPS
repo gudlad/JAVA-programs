@@ -1,0 +1,158 @@
+OOPs Concepts:   security, maitainance, modularity, enahancement of code
+
+* data hiding --
+Outside person shouldn't access our data directly
+ implemented by private keyword + getters, setters  : userid ,password authentication in any website
+ 
+* abstraction -- interfaces, abtract classes 
+hiding the internal details and highlighting the set of services = ex: bank ATM
+
+* Encapsulation --  (data hiding + abstraction)
+Every java class is an example of encapsulation 
+data members + methods that  alter the data memebers
+--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+OOP : coode reusability
+-- ---------------------------------------------------------------------------------------------------------------------
+*  Inheritence
+5 types 
+---- ---------------------------------------------------------------------------------------------------------------
+
+
+OOP : provides flexibility to the programmer
+
+*** POLYMORPHISM *** ----------------------------------------------------------------
+
+* method overloading
+-- COMPILE TIME POLYMORPHISM || STATIC POLYMORPHISM || EARLY BINDING
+--  more flexibility 
+-- reduces less complexity
+-- method siganature ( method name, argument types)
+-- method reosultion taken care by compiler based on reference types
+-- return type can be same or different it doesn't matter
+
+A a =new B();
+
+A a - reference type
+new B() - runtime object type
+
+compiler & reference types are related which workes in method overloding
+
+JVM & runtime object type are related which workes in method overriding
+
+--- - -----------------------------------------------------------------------------------------------------------------------
+
+* method overriding
+-- if the child class not satisfied with parent class method it can redefine methods that it inherits according to it's requirements
+-- RUN TIME POLYMORPHISM || DYNAMIC POLYMORPHISM || LATE BINDING
+-- return type should be same for primitive return types 
+-- return type can be same or covariant  for object return types
+
+
+--- ---------------------------------------------------------------------
+-- static methods are class level methods and normal methods are object methods
+-- statics methods can't be overridden by objects methods
+-- objects methods can't be overridden by classes methods
+
+* Method hiding
+-- when we try to override the parent class static method with child class static method
+  it will become method hiding
+-- Both parent and child class methods should be static methods
+-- method resolution taken care by compiler
+-- So it is also called compile time POLYMORPHISM or early Binding or static POLYMORPHISM
+
+-- -------------------------------------------------------------------------------
+
+* there is no variable overriding concept 
+* the variable resolution is always done by the compiler
+ whether the variable is static or instance variable
+-- some times called variable hiding or shadowing
+
+-- -------------------------------------------------------------------------------
+
+Exception: handling:
+
+Exception:
+an unwanted or unexpected event that disturbs the normal flow of 
+the execution of the the program is called Exception
+
+If Exception not handled the program will terminate abnormally
+
+Excpetions are recoverable
+Errors are not recoverable, they are caused by lack of system resources  
+ex:VirtualMachineError
+
+2 types checked and unchecked Excpetions
+Excpetions always occur at runtime not compile times
+
+exceptions checked by compiler for smooth execution at runtime are called checked exceptions
+ex: FileNotFoundException
+
+exceptions not checked by compiler whether programmer handles or not
+are called unchecked exceptions.
+ex: Arithmatic Exception
+
+throw: throw keyword is used to throw custom exception
+it handover the custom created exception to the JVM
+
+--- --------------------------------------------------------------------
+** MULTI THREADING IN JAVA **
+
+In multitasking there are 2 types:
+* process (running program) based multingtasking --> (OS LEVEL)more than one indepent process run simultaneously
+* thread based multingtasking  -->(programmatic level) within tha same program several indepenet parts can run simultaneously called threads.
+
+
+JDK --> JVM,JAVA COMPILER, JAVA API LIBRARY
+
+JAVA API LIBRARY --> builtin classes, interfaces, and methods
+Ex: threadName.start()
+here start() no need of implementation provided by  java api libarary
+90% of the tasks are done by API
+only 10% tasks have to be done by the programmers
+
+JAVA PROVIDES INBUILT SUPPORT VIA THE JAVA API LIBRARY
+
+
+javac filename.java --> javac is the java compiler
+java filename  --> java is the java interpreter
+
+
+thread created in two ways
+1. implementation of the runnable interface
+2. extending the Thread class  ( Thread is api class)
+
+
+Thread is each flow of execution
+Every Thread has it's own separate indepenet JOB
+
+methods --> run(), start();
+
+-- ------------------------------------------------------------------------------------------------
+String --> StringBuffer --> StringBuilder
+
+String            
+--------
+.contains(string str)
+.startsWith(string str)
+.endsWith(string str)
+.split(regex)
+.concat()
+.==
+.equals()
+.equalsIgnoreCase()
+.isEmpty()
+.length()
+.replace(char old,char new) // replaces every occurrence
+.replaceAll(regex)
+.substring(int begin)
+.substring(int begin,int end)
+.indexOf(char ch)
+.lastIndexOf(char ch)
+.toLowerCase()
+.toUpperCase()
+.trim() --> .strip()
+.isBlank()
+
+
+StringBuffer and String StringBuilder
