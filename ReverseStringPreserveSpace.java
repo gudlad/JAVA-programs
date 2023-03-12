@@ -9,20 +9,20 @@ public class ReverseStringPreserveSpace {
                 destination[i] = source[i];
             }
         }
-
         // Transfer non-space characters in reverse order
         for (int i = 0; i < source.length; i++) {
-            if (source[i] != ' ' && destination[j] != ' ') {
-                destination[j] = source[i];
+            if (source[i] != ' ') {
+               if(destination[j] == ' ') {
                 j--;
             }
-        }
-
+            destination[j] = source[i];
+            j--;
+        }}
         return destination;
     }
 
     public static void main(String[] args) {
-        String str = "Hello World";
+        String str = "Hello Ram";
         char[] strArray = str.toCharArray();
         char[] duplStr = new char[strArray.length];
 
