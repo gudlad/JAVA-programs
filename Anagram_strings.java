@@ -21,6 +21,6 @@ public static void main(String[] args) {
     char[] s1=str1.toCharArray();
     char[] s2=str2.toCharArray();
     System.out.println(isAnagram(s1,s2));
-
+    s.close();
 }
 }

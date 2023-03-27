@@ -1,7 +1,8 @@
+package Collection_framework;
+
 import java.util.HashMap;
 class Hashmap_
 {
-
 public static void main(String[] args) {
     HashMap map=new HashMap();
     // doesn't maintain the order of insertion
