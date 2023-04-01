@@ -54,5 +54,6 @@ public static void main(String[] args) {
     // int index=binarySearch_recursive(array, target,start,end);
     int index=binarySearch_iterative(array2, target,start,end);
     System.out.println(index);
+    s.close();
 }
 }

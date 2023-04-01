@@ -1,4 +1,5 @@
-OOPs Concepts:   security, maitainance, modularity, enahancement of code
+OOPs Concepts:   
+security, maitainance, modularity, enhancement of code
 
 * data hiding --
 Outside person shouldn't access our data directly
@@ -15,6 +16,7 @@ data members + methods that  alter the data memebers
 OOP : coode reusability
 -- ---------------------------------------------------------------------------------------------------------------------
 *  Inheritence
+Keywords: extends, super
 5 types 
 ---- ---------------------------------------------------------------------------------------------------------------
 
@@ -25,8 +27,8 @@ OOP : provides flexibility to the programmer
 
 * method overloading
 -- COMPILE TIME POLYMORPHISM || STATIC POLYMORPHISM || EARLY BINDING
---  more flexibility 
--- reduces less complexity
+-- more flexibility 
+-- reduces complexity
 -- method siganature ( method name, argument types)
 -- method reosultion taken care by compiler based on reference types
 -- return type can be same or different it doesn't matter
@@ -36,9 +38,22 @@ A a =new B();
 A a - reference type
 new B() - runtime object type
 
-compiler & reference types are related which workes in method overloding
+compiler & reference types are related, which workes in method overloding
 
-JVM & runtime object type are related which workes in method overriding
+JVM & runtime object type are related, which workes in method overriding
+
+
+if A is parent class and B is child,
+when I do, A a=new B();
+case 1:
+suppose m1() method is present in both class then m1() method of class B called
+
+case 2:
+suppose m1() method is present in A not in B   then m1() method of class A is called
+
+case 3:
+suppose m1() method is present in B not in A   then compile time error
+
 
 --- - -----------------------------------------------------------------------------------------------------------------------
 
@@ -72,7 +87,7 @@ JVM & runtime object type are related which workes in method overriding
 
 Exception: handling:
 
-Exception:
+Exception(runtime error):
 an unwanted or unexpected event that disturbs the normal flow of 
 the execution of the the program is called Exception
 
@@ -85,7 +100,7 @@ ex:VirtualMachineError
 2 types checked and unchecked Excpetions
 Excpetions always occur at runtime not compile times
 
-exceptions checked by compiler for smooth execution at runtime are called checked exceptions
+exceptions that are checked by compiler for smooth execution of code at runtime are called checked exceptions
 ex: FileNotFoundException
 
 exceptions not checked by compiler whether programmer handles or not
@@ -129,10 +144,12 @@ Every Thread has it's own separate indepenet JOB
 methods --> run(), start();
 
 -- ------------------------------------------------------------------------------------------------
-String --> StringBuffer --> StringBuilder
+String --> StringBuffer(Thread Safe) --> StringBuilder
 
 String            
 --------
+.charAt(0)
+.compareTo(String)
 .contains(string str)
 .startsWith(string str)
 .endsWith(string str)
@@ -156,3 +173,4 @@ String
 
 
 StringBuffer and String StringBuilder
+.append(String)
