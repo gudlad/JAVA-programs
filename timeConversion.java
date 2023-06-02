@@ -2,7 +2,6 @@ public class timeConversion {
     public static void main(String[] args) {
         String str = "12:01:00AM";
         System.out.println(convert(str));
-
     }
 
     // 12 hour format to 24 hour format
