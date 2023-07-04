@@ -32,9 +32,16 @@ public class insertion_buble_selection_sort {
     // }
 
     // bubble sort
+    // time complexity O(n2)
+    // stable sorting
+    // in-place sorting
     // public static void sort(int[] arr)
     // {
 
+        // edge cases : 
+        // if array is already sorted : 1,2,3,4,5,6,7,8,9
+        // or partially sorted : 2,1,3,4,5,6,7,8,9
+        
     //     boolean swapped;
     //     for(int i=0; i<arr.length; i++)
     //     {
