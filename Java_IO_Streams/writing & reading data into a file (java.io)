@@ -1,0 +1,15 @@
+writing data into a file (java.io):
+1. add import java.io.* statement
+2. create FileOutputStream object
+3. invoke fos.write(data) to store data
+4. invoke fos.flush() to flush data into file
+5. invoke fos.close() to close the fos connection
+6. handle exceptions
+
+reading data from the file:
+1. add import java.io.* statement
+2. create FileInputStream object
+3. invoke fis.read() for reading data
+4. invoke fis.close() to close the fis connection
+5. handle exceptions
+
