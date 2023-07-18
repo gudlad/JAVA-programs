@@ -1,0 +1,15 @@
+link ▶️
+ https://www.youtube.com/watch?v=ScUJx4aWRi0&ab_channel=CodingwithJohn
+
+BufferedReader+FileReader
+BufferedWriter+FileWriter
+-----------------------------------------------
+User Input: 
+1. BufferedReader+InputStreamReader(obj)+InputStream(obj i.e System.in)
+ Note: here in is an object of input stream inside System class as static variable.
+link ▶️ 
+https://www.youtube.com/watch?v=bwHr9G5VIls&ab_channel=Telusko
+
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+
+2. Scanner Class
