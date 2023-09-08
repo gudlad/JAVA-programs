@@ -2,46 +2,65 @@ OOPs Concepts:
 security, maitainance, modularity, enhancement of code
 
 * data hiding --
-Outside person shouldn't access our data directly
- implemented by private keyword + getters, setters  : userid ,password authentication in any website
- 
-* abstraction -- interfaces, abtract classes 
-hiding the internal details and highlighting the set of services = ex: bank ATM
+-- Outside person shouldn't access our data directly
+-- implemented by private keyword + getters, setters  : userid ,password authentication in any website
 
-* Encapsulation --  (data hiding + abstraction)
-Every java class is an example of encapsulation 
-data members + methods that  alter the data memebers
+* abstraction -- interfaces, abtract classes 
+-- hiding the internal details and highlighting the set of services = ex: bank ATM
+--> abstract classes 0-100% abstraction.
+--> interfaces 100% abstraction.
+
+
+1* Encapsulation --  (data hiding + abstraction)
+-- Wrapping of data members (variables) and member methods(methods) in a single unit.
+-- Every java class is an example of encapsulation 
+-- data members + methods that  alter the data memebers
 --- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-OOP : coode reusability
+OOP : code reusability
 -- ---------------------------------------------------------------------------------------------------------------------
-*  Inheritence
-Keywords: extends, super
-5 types 
+2*  Inheritence : mechanism in java by which one class is allowed to inherit the features of another class.
+-- Keywords: extends, super, this
+-- 5 types : single inheritance, multi level inheritance, hierarchical inheritance, multiple inheritance, hybrid inheritance.
 ---- ---------------------------------------------------------------------------------------------------------------
+this  -> refers to current invoking object.
+      -> this(),this.
+      -> used to call one constructor from another constructor depending on the on the arguments inside same class.
 
+super -> refers to immediate parent of the current invoking object
+      -> super(),super.
+      -> used to call parent class constructor from child class constructor.
+      -> access the parent's variables and methods.
 
 OOP : provides flexibility to the programmer
 
-*** POLYMORPHISM *** ----------------------------------------------------------------
+***3 POLYMORPHISM *** ----------------------------------------------------------------
 
 * method overloading
 -- COMPILE TIME POLYMORPHISM || STATIC POLYMORPHISM || EARLY BINDING
 -- more flexibility 
 -- reduces complexity
 -- method siganature ( method name, argument types)
--- method reosultion taken care by compiler based on reference types
+-- method resolution taken care by compiler at compile time based on reference types
 -- return type can be same or different it doesn't matter
+-- compiler & reference types are related, which workes in method overloding
 
+--- - -----------------------------------------------------------------------------------------------------------------------
+
+* method overriding
+-- if the child class not satisfied with parent class method it can redefine methods that it inherits according to it's requirements
+-- JVM & runtime object type are related, which workes in method overriding
+-- RUN TIME POLYMORPHISM || DYNAMIC POLYMORPHISM || LATE BINDING
+-- return type should be same for primitive return types 
+-- return type can be same or covariant  for object return types
+
+------------------------------------------------------------------------------------------------
+*** case study ***
+------------------
 A a =new B();
 
 A a - reference type
 new B() - runtime object type
-
-compiler & reference types are related, which workes in method overloding
-
-JVM & runtime object type are related, which workes in method overriding
-
 
 if A is parent class and B is child,
 when I do, A a=new B();
@@ -54,16 +73,6 @@ suppose m1() method is present in A not in B   then m1() method of class A is ca
 case 3:
 suppose m1() method is present in B not in A   then compile time error
 
-
---- - -----------------------------------------------------------------------------------------------------------------------
-
-* method overriding
--- if the child class not satisfied with parent class method it can redefine methods that it inherits according to it's requirements
--- RUN TIME POLYMORPHISM || DYNAMIC POLYMORPHISM || LATE BINDING
--- return type should be same for primitive return types 
--- return type can be same or covariant  for object return types
-
-
 --- ---------------------------------------------------------------------
 -- static methods are class level methods and normal methods are object methods
 -- statics methods can't be overridden by objects methods
@@ -71,7 +80,7 @@ suppose m1() method is present in B not in A   then compile time error
 
 * Method hiding
 -- when we try to override the parent class static method with child class static method
-  it will become method hiding
+   it will become method hiding
 -- Both parent and child class methods should be static methods
 -- method resolution taken care by compiler
 -- So it is also called compile time POLYMORPHISM or early Binding or static POLYMORPHISM

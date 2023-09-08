@@ -1,6 +1,11 @@
 
 import java.util.Arrays;
 
+// merge sort
+// time complexity : O(n logn)
+// not in place sorting
+// stable sorting
+
 public class Merge_sort {
 
     public static void sort(int[] arr, int start, int end) {
