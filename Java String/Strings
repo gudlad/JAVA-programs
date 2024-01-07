@@ -1,0 +1,50 @@
+-- ------------------------------------------------------------------------------------------------
+String --> StringBuffer(Thread Safe) --> StringBuilder
+
+String Built in Methods        
+-----------------------
+.charAt(0)
+.compareTo(String)
+.compareToIgnoreCase(String)
+.contains(string str)
+.startsWith(string str)
+.endsWith(string str)
+.split(regex)
+.concat()
+.==
+.equals()
+.equalsIgnoreCase()
+.isEmpty()
+.length()
+.replace(char old,char new | string,string) // replaces every occurrence
+.replaceAll(regex)
+.replaceFirst(string,string)
+.substring(int begin)
+.substring(int begin,int end)
+.indexOf(char ch| String str)
+.lastIndexOf(char ch| String str)
+.toLowerCase()
+.toUpperCase()
+.strip()     //! trim() is deprecated use strip() for all use cases.
+.isBlank()
+.format()
+.valueOf()
+.chars()
+---------------------------------------------------------------------------------------------------
+
+StringBuilder and StringBuffer methods:
+-------------------------------------- 
+.length(StringBuilder)
+.append(String| char | StringBuilder | ... anything)
+.charAt(index)
+.compareTo(StringBuilder)
+.delete(start,end)
+.deleteCharAt(index)
+.indexOf(String)
+.lastIndexOf(String)
+.isEmpty()
+.insert(index, character | index, string | index, number)
+.setCharAt(index,character)
+.reverse()
+.replace(start,end,string)
+.substring(start,end) returns string

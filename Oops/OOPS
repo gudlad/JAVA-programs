@@ -152,34 +152,4 @@ Every Thread has it's own separate indepenet JOB
 
 methods --> run(), start();
 
--- ------------------------------------------------------------------------------------------------
-String --> StringBuffer(Thread Safe) --> StringBuilder
 
-String            
---------
-.charAt(0)
-.compareTo(String)
-.contains(string str)
-.startsWith(string str)
-.endsWith(string str)
-.split(regex)
-.concat()
-.==
-.equals()
-.equalsIgnoreCase()
-.isEmpty()
-.length()
-.replace(char old,char new) // replaces every occurrence
-.replaceAll(regex)
-.substring(int begin)
-.substring(int begin,int end)
-.indexOf(char ch)
-.lastIndexOf(char ch)
-.toLowerCase()
-.toUpperCase()
-.trim() --> .strip()
-.isBlank()
-
-
-StringBuffer and String StringBuilder
-.append(String)

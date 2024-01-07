@@ -8,9 +8,16 @@ import java.util.Arrays;
 // not in place sorting
 // stable sorting
 
-public class Merge_sort {
+public class merge_sort_inplace {
 
-    public static void sort(int[] arr, int start, int end) {
+public static void main(String[] args) {
+    int[]  arr={5,4,3,2,1};
+    sort(arr,0,arr.length);
+    System.out.println(Arrays.toString(arr));
+}
+
+
+public static void sort(int[] arr, int start, int end) {
         if(end-start==1)
             return;
         int mid=(start+end)/2;
@@ -50,18 +57,12 @@ private static void merge(int[] arr, int start, int mid, int end) {
         k++;
     }
     for(int l=0;l<mix.length;l++)
-        arr[start+l]=mix[l];
-
-    }
+    arr[start+l]=mix[l];
     
-
-public static void main(String[] args) {
-    int[]  arr={5,4,3,2,1};
-    sort(arr,0,arr.length);
-    System.out.println(Arrays.toString(arr));
 }
 
 }
+
 
 
 

@@ -110,7 +110,7 @@ public class String_Questions {
 
         for(int i=0; i<chars.length-1; i++) 
         {
-            for(int j=i+1; j>0; j--) // brute force sorting
+            for(int j=i+1; j>0; j--) 
             {
                 if(chars[j-1]>chars[j])
                 {
@@ -258,7 +258,7 @@ public class String_Questions {
     }
     
         private static void longestSubstringWithoutRepeatedCharacter(String string) {
-            char[] chars = string.toCharArray();
+            char[] chars = string.toCharArray();  // javajavac
             String longestSubstring="";
             int lenLongestSubstring = 0;
             LinkedHashMap<Character,Integer> map=new LinkedHashMap<>();
@@ -286,17 +286,17 @@ public class String_Questions {
         }
 
     public static void main(String[] args) {
-        findFrequency_occuranceOfCharacter("guruprasad");
-        //2. removeSpecialCharacters("$ja!va$&st%ar");
-        //3.removeWhiteSpaces("  jav va s ta r");
-        //4. removeDuplicateCharacters("guruprasad");
-        //5. sortString("rock");
-        //6. replaceCharacterWithItsOccurance("OPENTEXT");
-        // System.out.println("bUru".compareToIgnoreCase("auru"));
-        // System.out.println("aUru".compareTo("buru"));
-        //7. firstNonrepeatedCharacter("AABCDBE");
-        //8.reverseEachWordInString("java code");
-        // longestSubstringWithoutRepeatedCharacter("java");
+        // findFrequency_occuranceOfCharacter("guruprasad");
+        // //2. removeSpecialCharacters("$ja!va$&st%ar");
+        // //3.removeWhiteSpaces("  jav va s ta r");
+        // //4. removeDuplicateCharacters("guruprasad");
+        // //5. sortString("rock");
+        // //6. replaceCharacterWithItsOccurance("OPENTEXT");
+        // // System.out.println("bUru".compareToIgnoreCase("auru"));
+        // // System.out.println("aUru".compareTo("buru"));
+        // //7. firstNonrepeatedCharacter("AABCDBE");
+        // //8.reverseEachWordInString("java code");
+        longestSubstringWithoutRepeatedCharacter("javajavac");
         
 
     }
